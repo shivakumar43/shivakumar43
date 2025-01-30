@@ -1,0 +1,9 @@
+
+  iwconfig
+airmon-ng start wlan0
+iwconfig
+airmon-ng stop wlan0 
+ iwconfig
+ip link set wlan0 down  
+ ip link set wlan0 name wlan0mon
+ iwconfig   
