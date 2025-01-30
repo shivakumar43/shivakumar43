@@ -1,0 +1,5 @@
+git clone --depth 1 https://gitlab.com/SimplyCEO/rtl8188eus.git
+cd rtl8188eus/
+make -j$(nproc)
+su -c "make install clean"
+su -c "modprobe --remove rtl8xxxu && modprobe 8188eu"
