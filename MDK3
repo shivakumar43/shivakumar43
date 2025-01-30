@@ -1,0 +1,12 @@
+git clone https://github.com/charlesxsh/mdk3-master.git
+
+cd mdk3-master
+make
+sudo make install
+sudo /usr/local/sbin/mdk3
+
+When I type make I get: make: *** No rule to make target 'osdep/libosdep.a', needed by 'mdk3'.  Stop.
+git clone git://git.kali.org/packages/mdk3.git
+patch <makefile.patch #<patch the source to get rid of "undefined reference to pthread_create" while doing make
+make
+make install
