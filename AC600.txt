@@ -1,0 +1,49 @@
+1.sudo dkms status
+2.sudo apt update && sudo apt upgrade
+3.sudo reboot      sudo apt install -y build-essential
+4.git clone https://github.com/morrownr/8812au-20210820.git
+5.cd 8812au-20210820
+6../install-driver.sh
+7.gcc 12.2 (used to compile the kernel)
+gcc 12.1 (version of gcc in use)
+
+8.cat /proc/version
+9.gcc --version
+10.sudo apt install gcc-12
+
+11.sudo ./install-driver.sh
+          OR
+12.sudo sh install-driver.sh
+
+13.sudo mokutil --import /var/lib/dkms/mok.pub
+14.install-driver.sh
+15.make clean
+16.make -j$(nproc)
+17.sudo make install
+18.sudo reboot
+19.sudo make sign-install
+20.sudo reboot
+
+21.sudo mokutil --reset
+22.reset MOK list
+23.sudo make sign-install
+24.sudo make uninstall
+25.sudo reboot
+26.8812au.conf
+27./etc/modprobe.d
+28.install-driver.sh
+29.edit-options.sh
+30.install-driver.sh
+31.8812au.conf
+32.edit-options.sh
+33.sudo ./edit-options.sh
+33.8812au.conf
+              Open a terminal (e.g. Ctrl+Alt+T).
+34cd ~/src/8812au-20210629
+35.git pull
+36.sudo ./install-driver.sh
+37.install-driver.sh
+              Open a terminal (e.g. Ctrl+Alt+T).
+38.cd ~/src/8812au-20210629
+39.sudo ./remove-driver.sh
+40.
